@@ -50,7 +50,6 @@ body {
     color: var(--main-color);
     font-size: 1.2em;
     font-family: 'Chakra Petch', sans-serif;
-    /* padding: 20px; */
 }
 
 nav {
@@ -121,6 +120,7 @@ nav button {
 }
 
 header {
+    background-image: linear-gradient(180deg, #181818 0%, #252525 100%);
     margin-top: 4em;
     margin-bottom: 2.5em;
     padding: 30px;
@@ -136,6 +136,21 @@ h1 {
     text-align: end;
     font-size: 2.2em;
     font-family: 'Righteous', cursive;
+
+    animation: header-1 600ms ease;
+}
+
+header > h3 {
+    opacity: 0;
+    animation: header-3 2s ease-out 1.6s;
+    animation-fill-mode: forwards;
+    
+}
+header > span {
+    opacity: 0;
+    animation: header-2 200ms linear;
+    animation-delay: 800ms;
+    animation-fill-mode: forwards;
 }
 
 section {
@@ -511,12 +526,18 @@ footer button {
         display: none;
     }
     .nav-links {
-        display: flex;
         position: static;
+        display: flex;
         flex-direction: row;
+        align-items: center;
         transform: none;
         background-color: transparent;
-        padding: 1.2em;
+        padding: .5em;
+    }
+    .nav-links span {
+        position: unset;
+        font-size: 3em;
+        padding-right: 2em;
     }
     .nav-links li:last-child {
         margin-left: 3em;
@@ -564,5 +585,40 @@ footer button {
         justify-self: end;
         width: 30%;
         cursor: pointer;
+    }
+}
+
+
+@keyframes header-1 {
+    0% {
+        transform: translateX(-1500px);
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes header-2 {
+    0% {
+        opacity: 0;
+        transform: translateY(250px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes header-3 {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }
