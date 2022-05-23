@@ -481,6 +481,28 @@ footer button {
     cursor: pointer;
 }
 
+.thanks {
+    height: 100vh;
+    width: 80%;
+    margin: auto;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.thanks img {
+    border-radius: 50%;
+}
+.thanks p {
+    text-align: center;
+}
+.thanks a {
+    text-decoration: none;
+    font-weight: 700;
+}
+
+
 @media only screen and (min-width: 768px) {
     .nav-links span {
         font-size: 3em;
@@ -524,6 +546,17 @@ footer button {
     .contact-section button {
         width: 40%;
         justify-self: center;
+    }
+    .thanks {
+        width: 100%;
+        justify-content: center;
+        gap: 3em;
+    }
+    .thanks h2 {
+        font-size: 3em;
+    }
+    .thanks p, .thanks a {
+        font-size: 1.7em;
     }
 }
 
@@ -592,8 +625,20 @@ footer button {
         width: 30%;
         cursor: pointer;
     }
+    .thanks {
+        gap: 0;
+        justify-content: space-around;
+    }
+    .thanks h2 {
+        font-size: 2em;
+    }
+    .thanks p, .thanks a {
+        font-size: 1.2em;
+    }
+    .thanks a:hover {
+        box-shadow: 0 0 15px 0px #2083f3aa;
+    }
 }
-
 
 @keyframes header-1 {
     0% {
