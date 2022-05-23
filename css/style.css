@@ -97,6 +97,15 @@ nav a:hover, nav a:focus {
 
     transition: transform .5s;
 }
+.nav-links > span {
+    font-size: 2em;
+    font-family: 'Righteous', cursive;
+    font-weight: 700;
+    cursor: pointer;
+
+    position: absolute;
+    top: 1em;
+}
 .nav-links li:last-child {
     display: flex;
     gap: 2em;
@@ -154,6 +163,10 @@ section h2 {
     background-color: var(--primary-color);
     border-radius: 10% / 50%;
     overflow: hidden;
+    
+    display: flex;
+    justify-content: center;
+    
 }
 
 .about-section p {
@@ -364,7 +377,7 @@ svg {
 .contact-section {
     display: flex;
     flex-direction: column;
-    gap: 2em;
+    column-gap: 2em;
     width: 80%;
     margin: auto;
 }
@@ -448,6 +461,15 @@ footer button {
 }
 
 @media only screen and (min-width: 768px) {
+    .nav-links span {
+        font-size: 3em;
+    }
+    .nav-links li {
+        font-size: 1.2em;
+    }
+    header h1 {
+        font-size: 3em;
+    }
     .skills-section {
         width: 75%;
         margin: auto;
@@ -497,7 +519,7 @@ footer button {
         padding: 1.2em;
     }
     .nav-links li:last-child {
-        margin-left: 5em;
+        margin-left: 3em;
         font-size: 1.2em;
     }
     header {
