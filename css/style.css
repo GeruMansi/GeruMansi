@@ -116,7 +116,8 @@ nav a:hover, nav a:focus {
 
 nav button {
     align-self: flex-end;
-    margin: auto 10px;
+    margin: auto 20px;
+    font-size: .8em;;
 }
 
 header {
@@ -124,7 +125,8 @@ header {
     margin-top: 4em;
     margin-bottom: 2.5em;
     padding: 30px;
-    height: 70vh;
+    height: 85vh;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
